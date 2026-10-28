@@ -17,7 +17,6 @@ export async function invokeApi({
     url: baseUri + path,
     headers,
   };
-  console.log(reqObj.url);
 
   reqObj.params = queryParams;
 

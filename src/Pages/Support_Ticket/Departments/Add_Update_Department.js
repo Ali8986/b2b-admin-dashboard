@@ -64,10 +64,6 @@ function AddOrUpdateDepartment({ type }) {
     if (!formData.status) {
       errors.push("Status");
     }
-    console.log(
-      formData.description,
-      "formData.descriptionformData.descriptionformData.description"
-    );
     if (!formData.description) {
       errors.push("Description");
     }
@@ -106,7 +102,6 @@ function AddOrUpdateDepartment({ type }) {
 
   useEffect(() => {
     if (state) {
-      console.log(state, "State is active sakldsakjlksjlk");
       handleFormateData(state);
     } else if (type === Update_Department) {
       // eslint-disable-next-line
